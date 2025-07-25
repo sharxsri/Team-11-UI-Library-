@@ -1,0 +1,125 @@
+/* General Reset and Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0f0f11;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #141416;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.navbar nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #c7c7c7;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+  color: #ffffff;
+}
+
+/* Header */
+header {
+  font-size: 2.75rem;
+  text-align: center;
+  padding: 3rem 1rem 1.5rem;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+/* Component Grid */
+.component-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Component Cards */
+.component-card {
+  background: linear-gradient(to bottom, #1b1b1d, #131315);
+  border: 1px solid #292929;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.component-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.component-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.component-card button {
+  background-color: #2d2d2f;
+  color: #ffffff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.component-card button:hover {
+  background-color: #3d3d3f;
+}
+
+/* Design Links */
+.design-options {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.design-options a {
+  color: #00bfff;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.design-options a:hover {
+  color: #1ec5ff;
+  text-decoration: underline;
+}
+
+/* Responsive Text */
+@media (max-width: 768px) {
+  header {
+    font-size: 2rem;
+  }
+  .navbar .logo {
+    font-size: 1.25rem;
+  }
+}
